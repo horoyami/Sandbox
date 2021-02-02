@@ -1,0 +1,35 @@
+body {
+    padding: 20px;
+    background: black;
+}
+
+.GradientCard1-Text {
+    color: white;
+}
+
+.GradientCard1 {
+    position: relative;
+    width: 150px;
+    padding: 25px;
+
+    background: black;
+}
+
+.GradientCard1::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    bottom: -2px;
+    left: -2px;
+
+    background: linear-gradient(to right, blue, blueviolet, blue);
+    transform: skew(2deg, 2deg);
+    transition: .5s;
+
+    z-index: -1;
+}
+
+.GradientCard1:hover::before {
+    transform: skew(0, 0);
+}

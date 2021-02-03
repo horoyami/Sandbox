@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+
+    background: black;
+}
+
+.spinner {
+    position: relative;
+
+    width: 95px;
+    height: 95px;
+
+    background: inherit;
+    border-radius: 50%;
+}
+
+.spinner::after {
+    content: "";
+    position: absolute;
+
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
+
+    background: linear-gradient(blue, blueviolet, darkorchid);
+    border-radius: 50%;
+
+    animation: bgRotate 1.5s linear infinite;
+
+    z-index: -1;
+}
+
+@keyframes bgRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

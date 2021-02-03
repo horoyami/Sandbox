@@ -1,0 +1,49 @@
+.block {
+    position: relative;
+    max-width: 400px;
+
+    overflow: hidden;
+
+    background: blueviolet;
+}
+
+.block p, .block h1 {
+    color: white;
+}
+
+.block-wrap {
+    padding: 20px 35px;
+}
+
+.block::before,
+.block::after,
+.block-wrap::before,
+.block-wrap::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background: white;
+}
+
+.block::before {
+    top: -20px;
+    left: -20px;
+}
+
+.block::after {
+    top: -20px;
+    right: -20px;
+}
+
+.block-wrap::before {
+    bottom: -20px;
+    left: -20px;
+}
+
+.block-wrap::after {
+    bottom: -20px;
+    right: -20px;
+}

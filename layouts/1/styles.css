@@ -1,0 +1,174 @@
+body {
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+}
+
+a {
+    color: orange;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+.website {
+    width: 1000px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.logo {
+    font-size: 3.2em;
+}
+
+.author {
+    color: gray;
+}
+
+.mainMenu {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+    background: orange;
+}
+
+.mainMenu a {
+    display: block;
+    padding: 20px;
+
+    color: #ffffffaf;
+    text-decoration: none;
+}
+
+.banner {
+    margin-top: 40px;
+
+    width: 100%;
+}
+
+.main {
+    display: flex;
+
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.panel {
+    width: 275px;
+    flex-shrink: 0;
+}
+
+.panel ul {
+    padding: 0;
+    margin: 0;
+
+    list-style-type: none;
+}
+
+.panel li {
+    color: orange;
+
+    border-bottom: 1px solid gainsboro;
+}
+
+.panel li::before {
+    content: "ᐅ";
+    padding-right: 7px;
+}
+
+.panel li a {
+    display: inline-block;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.info {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.tape {
+    flex-grow: 1;
+
+    margin-left: 50px;
+}
+
+.title {
+    font-size: 2em;
+}
+
+.subinfo {
+    margin-top: -15px;
+    margin-bottom: 30px;
+
+    color: gray;
+}
+
+.transButton {
+    padding: 5px 10px;
+    float: right;
+    clear: right;
+
+    margin-top: 5px;
+    margin-right: 25px;
+
+    color: orange;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid gainsboro;
+    outline: none;
+    cursor: pointer;
+}
+
+.post {
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.post:not(:first-child) {
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 40px;
+    padding: 40px;
+
+    border-top: 1px solid gainsboro;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
